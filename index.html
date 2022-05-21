@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hey, I'm Odunayo Ayodeji Fawumi.">
+    <meta name="keywords" content="Front-end Developer, Full Stack Javascript Developer, Node JS, React, Vuejs, Ayodeji, Odunayo Fawumi">
+    <title>Welcome - I'm  Odunayo.  Front-end | Javascript Fullstack | Developer </title>
+    <link rel="icon" href="./assets/img/avatar.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</head>
+<body>
+    <main>
+        <!-- Navbar section -->
+        <header>
+            <nav class="navbar-container">
+                <div class="container">
+                    <div class="navbar-content">
+                        <a href="./index.html" >
+                            <img width="40" height="40" src="./assets/img/avatar.svg" alt="logo" />
+                        </a>
+                        <div class="nav-main">
+                            <ul>
+                                <li>
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#experiences">Experiences</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group-btn">
+                            <button name="toggle-theme-btn" id="toggleThemeBtn" type="button">
+                                <span class="material-icons">
+                                    &#xe51c;
+                                </span>
+                            </button>
+                            <button  name="toggle-menu-btn" type="button" class="menu-btn">
+                                <span class="bar bar1"></span>
+                                <span class="bar bar2"></span>
+                                <span class="bar bar3"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidenav">
+                    <div class="sidenav-content">
+                        <a href="#about" class="nav-link">About Me</a>
+                        <a href="#experiences" class="nav-link">Experiences</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#contact" class="nav-link">Hire Me</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End of Navbar Section -->
+        <!-- Banner Section -->
+        <section>
+            <div class="container">
+                <div class="banner-content">
+                    <div class="intro">
+                        <div class="description">
+                            <h2>
+                                Hey!, I'm <span class="outline">Odunayo</span> <br /> a 
+                                <span class="outline">Front-end Engineer</span>
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Obcaecati suscipit voluptas repellendus perspiciatis quidem 
+                                maiores soluta a ad pariatur vitae, ipsam, blanditiis nesciunt 
+                                incidunt veniam consectetur nostrum tenetur! Minima, quia!
+                            </p>
+                        </div>
+                        <div class="social-media-icon">
+                            <a class="bg-black" href="#contact">Connect with me</a>
+                        </div>
+                    </div>
+                    <div class="stacks-image-container">
+                        <div class="inner">
+                            <a 
+                                href="https://next.org" 
+                                class="banner-stacks" 
+                                target="_blank" 
+                                style="top: 150px; right: 375px; width: 4.25rem; 
+                                    height: 1.66rem;animation: bounce 2s infinite;border-radius: 35px;"
+                            >
+                                <img 
+                                    src="/assets/img/800px-Nextjs-logo.svg.png" 
+                                    alt="next-js-logo" 
+                                />
+                            </a>
+                            <a 
+                                href="https://redux-toolkit.org" 
+                                class="banner-stacks" 
+                                target="_blank" 
+                                style="top: 60px;right: 10px;width: 3.05rem;height: 3.02rem;
+                                    animation: bounce 3s infinite;">
+                                <img 
+                                    src="/assets/img/redux-logo-png-transparent.png"
+                                    alt="redux-toolkit-logo"
+                                />
+                            </a>
+                            <a 
+                                href="https://sass.org" 
+                                class="banner-stacks" 
+                                target="_blank"
+                                style="top: 40px;right: 290px;width: 3.75rem;height: 2.36rem;
+                                    animation: bounce 4s infinite;border-radius: 15px;">
+                                <img 
+                                    src="/assets/img/sass.png" 
+                                    alt="sass-logo" 
+                                />
+                            </a>
+                            <a 
+                                href="https://mdn.org/css3" 
+                                class="banner-stacks" 
+                                target="_blank"
+                                style="top: 30px;right: 155px;width: 3rem;height: 2.8rem;
+                                    animation: bounce 2s infinite;">
+                                <img 
+                                    src="/assets/img/css3-logo-png-transparent.png" 
+                                    alt="css-logo" 
+                                />
+                            </a>
+                            <a 
+                                href="https://mdn.org/javascript" 
+                                class="banner-stacks" 
+                                target="_blank" 
+                                style="top: 260px; right: 130px;width: 3.45rem; height: 3.45rem;
+                                    animation: bounce 1s infinite;">
+                                <img 
+                                    src="/assets/img/javascript-logo.png" 
+                                    alt="javascript-logo" 
+                                />
+                            </a>
+                            <a 
+                                href="https://angular.org" 
+                                class="banner-stacks"
+                                target="_blank" 
+                                style="top: 340px;right: 14px;width: 3.35rem;height: 3.36rem;
+                                    animation: bounce 3s infinite;">
+                                <img 
+                                    src="/assets/img/Angular_full_color_logo.svg.png" 
+                                    alt="angular-logo" 
+                                />
+                            </a>
+                            <a 
+                                href="https://mdn.org/html" 
+                                class="banner-stacks"
+                                target="_blank" 
+                                style="top: 345px;right: 400px;width: 4rem;height: 3.4rem;
+                                    animation: bounce 3s infinite;border-radius: 15px;">
+                                <img 
+                                    src="/assets/img/html5.png" 
+                                    alt="html-logo" 
+                                />
+                            </a>
+                            <a 
+                                href="https://typescript.org" 
+                                class="banner-stacks"
+                                target="_blank" 
+                                style="top: 380px; right: 180px; width: 3.25rem; height: 3rem;
+                                    animation: bounce 2s infinite">
+                                <img 
+                                    src="/assets/img/typescript.png" 
+                                    alt="typescript" 
+                                />
+                            </a>
+                            <a 
+                                href="https://reactjs.org" 
+                                class="banner-stacks"
+                                target="_blank" 
+                                style="top: 140px; right: 180px;width: 3.95rem; height: 3.8rem;
+                                    animation: bounce 4s infinite;">
+                                <img 
+                                    src="/assets/img/react-logo.jpg" 
+                                    alt="react-js" 
+                                />
+                            </a>
+                            <a 
+                                href="https://nest.org" 
+                                class="banner-stacks"
+                                target="_blank" 
+                                style="top: 200px; right: -20px;width: 2.85rem; height: 3rem;
+                                    animation: bounce 4s infinite;">
+                                <img 
+                                    src="/assets/img/nest-logo.png" 
+                                    alt="nest-js" 
+                                />
+                            </a>
+                            <a 
+                                href="https://nodejs.org" 
+                                class="banner-stacks"
+                                target="_blank" 
+                                style="top: 250px; right: 280px;width: 4.45rem; height: 3.3rem;
+                                    animation: bounce 2s infinite;border-radius: 25px;">
+                                <img 
+                                    src="/assets/img/nodejs-1-logo.png" 
+                                    alt="node-js" 
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Banner Section -->
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="section-title">
+                        <span class="subtitle">ABOUT ME</span>
+                        <h2 class="title">Who I am</h2>
+                    </div>
+                    <div class="about-container">
+                        <div class="about-detail">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur 
+                                adipisicing elit. Unde asperiores voluptatum 
+                                optio velit voluptates id assumenda at! Ipsum 
+                                quisquam, laborum, dolor labore voluptatem, 
+                                suscipit cum saepe enim qui ex blanditiis.
+                                Lorem ipsum dolor sit amet consectetur, 
+                                adipisicing elit. Vero obcaecati, illum 
+                                quae perspiciatis, at recusandae alias 
+                                iusto sed nostrum quibusdam sunt et. Illum, non? 
+                                Ipsa perferendis cupiditate molestias tempore sit.
+                                <br> <br>
+                                Lorem ipsum dolor, sit amet consectetur 
+                                adipisicing elit. Rerum, dolorum temporibus 
+                                asperiores modi adipisci eius eligendi 
+                                voluptatibus fugit, provident sequi ex 
+                                tempore itaque repudiandae aliquid vero? 
+                                Quos quasi delectus blanditiis!
+                                <br> <br>
+                                Lorem ipsum dolor, sit amet consectetur 
+                                adipisicing elit. Rerum, dolorum temporibus 
+                                asperiores modi adipisci eius eligendi 
+                                voluptatibus fugit, provident sequi ex 
+                                tempore itaque repudiandae aliquid vero? 
+                                Quos quasi delectus blanditiis!
+                            </p>
+                        </div>
+                        <div class="image-container">
+                            <div class="img-container">
+                                <img src="/assets/img/odunayo-ayodeji-fawumi.png" alt="my-image" />
+                            </div>
+                        </div>
+                    </div>
+                <div> 
+            </div>
+        </section>
+        <!-- ENd of About Section -->
+        <!-- Experiences Section -->
+        <section id="experiences">
+            <div class="container">
+                <div class="experience-content">
+                    <div class="section-title">
+                        <span class="subtitle">EXPERIENCES</span>
+                        <h2 class="title">Where I've Worked</h2>
+                    </div>
+                    <div class="experience-list">
+                        <div class="experience-tabs-headers">
+                            <ul class="tabs-headers-list">
+                                <li class="tab-header active" id="lautech-tab">LAUTECH</li>
+                                <li class="tab-header" id="bowen-tab">Bowen University</li>
+                                <li class="tab-header" id="micakin-tab">Micakin</li>
+                                <li class="tab-header" id="intelytics-tab">Intelytics</li>
+                            </ul>
+                        </div>
+                        <div class="experience-tabs-content">
+                            <div 
+                                data-aos="fade-up" 
+                                data-aos-duration="600" 
+                                data-aos-delay="300" 
+                                data-aos-once="true"
+                                class="experience-detail" 
+                                id="lautech-tab"
+                            >
+                                <div class="inner">
+                                    <div class="heading">
+                                        <div class="title">
+                                            <h4>
+                                                Bachelor of Technology in Computer Science 
+                                                <a href="#" style="color: black;">@ LAUTECH</a>
+                                            </h4>
+                                            <span>November 2015 - November 2021</span>
+                                        </div>
+                                    </div>
+                                    <p class="description">
+                                        Contrary to popular belief. Ut
+                                        tincidunt est ac dolor aliquam sodales.
+                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                        mauris hendrerit ante.
+                                        <br />
+                                        Contrary to popular belief. Ut
+                                        tincidunt est ac dolor aliquam sodales.
+                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                        mauris hendrerit ante.
+                                        <br />
+                                        Contrary to popular belief. Ut
+                                        tincidunt est ac dolor aliquam sodales.
+                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                        mauris hendrerit ante.
+                                        <br />
+                                    </p>
+                                </div>
+                            </div>
+                            <div 
+                                data-aos="fade-up" 
+                                data-aos-duration="600" 
+                                data-aos-delay="300" 
+                                data-aos-once="true"    
+                                class="experience-detail" 
+                                id="bowen-tab"
+                            >
+                                <div class="inner">
+                                    <div class="heading">
+                                        <div class="title">
+                                            <h4>
+                                                Junior Software Engineer (Internship)
+                                                <a href="#" style="color: black;">@Bowen University</a>
+                                            </h4>
+                                            <span>Novemeber 2020 - April 2021</span>
+                                        </div>
+                                    </div>
+                                    <p class="description">
+                                        Contrary to popular belief. Ut
+                                        tincidunt est ac dolor aliquam sodales.
+                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                        mauris hendrerit ante.
+                                        <br />
+                                        Contrary to popular belief. Ut
+                                        tincidunt est ac dolor aliquam sodales.
+                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                        mauris hendrerit ante.
+                                        <br />
+                                        Contrary to popular belief. Ut
+                                        tincidunt est ac dolor aliquam sodales.
+                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                        mauris hendrerit ante.
+                                        <br />
+                                    </p>
+                                </div>
+                            </div>
+                            <div  
+                                data-aos="fade-up" 
+                                data-aos-duration="600" 
+                                data-aos-delay="300"
+                                data-aos-once="true"
+                                class="experience-detail" 
+                                id="micakin-tab"
+                            >
+                                <div class="inner">
+                                    <div class="heading">
+                                        <div class="title">
+                                            <h4>
+                                                Front-end Engineer
+                                                <a href="#" style="color: black;">@ Micakin</a>
+                                            </h4>
+                                            <span>March 2020 - Present</span>
+                                        </div>
+                                    </div>
+                                    <p class="description">
+                                        Contrary to popular belief. Ut
+                                        tincidunt est ac dolor aliquam sodales.
+                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                        mauris hendrerit ante.
+                                        <br />
+                                        Contrary to popular belief. Ut
+                                        tincidunt est ac dolor aliquam sodales.
+                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                        mauris hendrerit ante.
+                                        <br />
+                                        Contrary to popular belief. Ut
+                                        tincidunt est ac dolor aliquam sodales.
+                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                        mauris hendrerit ante.
+                                        <br />
+                                    </p>
+                                </div>
+                            </div>
+                            <div  
+                                data-aos="fade-up" 
+                                data-aos-duration="600" 
+                                data-aos-delay="300"
+                                data-aos-once="true"
+                                class="experience-detail" 
+                                id="intelytics-tab"
+                            >
+                                <div class="inner">
+                                    <div class="heading">
+                                        <div class="title">
+                                            <h4>
+                                                Front-end Engineer 
+                                                <a href="#" style="color: black;">@ Intelytics</a>
+                                            </h4>
+                                            <span>April 2022 - Present</span>
+                                        </div>
+                                    </div>
+                                    <p class="description">
+                                        Contrary to popular belief. Ut
+                                        tincidunt est ac dolor aliquam sodales.
+                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                        mauris hendrerit ante.
+                                        <br />
+                                        Contrary to popular belief. Ut
+                                        tincidunt est ac dolor aliquam sodales.
+                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                        mauris hendrerit ante.
+                                        <br />
+                                        Contrary to popular belief. Ut
+                                        tincidunt est ac dolor aliquam sodales.
+                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                                        mauris hendrerit ante.
+                                        <br />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Experiences Section -->
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <div class="container">
+                <div class="portfolio-container">
+                    <div class="section-title">
+                        <span class="subtitle">MY PORTFOLIO</span>
+                        <h2 class="title">Some of My Works</h2>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="project">
+                            <div 
+                                data-aos="fade-up" 
+                                data-aos-duration="500" 
+                                data-aos-delay="300" 
+                                data-aos-once="true"
+                                class="project-detail"
+                            >
+                                <h2>01. FoodCredit Landing Page</h2>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur 
+                                    adipisicing elit. Alias error eius corporis 
+                                    delectus voluptatum aliquam officia ea eligendi 
+                                    porro qui perspiciatis magni eveniet beatae impedit 
+                                    consectetur reiciendis, tempora quo ratione.
+                                </p>
+                                <p>Stack Used: HTML, CSS, Jquery</p>
+                                <div style="display: flex; flex-direction: row;margin: 2rem 0;">
+                                    <a 
+                                        class="btn" 
+                                        href="#" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer">
+                                        <span id="icon" class="material-icons">
+                                            visibility
+                                        </span>
+                                        Preview
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                            <div 
+                                data-aos="fade-left" 
+                                data-aos-duration="500" 
+                                data-aos-delay="400" 
+                                data-aos-once="true"
+                                class="project-img"
+                            >
+                                <img src="./assets/img/foodcredit.png" alt="foodcredit landing page screenshot">
+                            </div>
+                        </div>
+                        <div class="project">  
+                            <div 
+                                data-aos="fade-right" 
+                                data-aos-duration="500" 
+                                data-aos-delay="300" 
+                                data-aos-once="true"
+                                class="project-img"
+                            >
+                                <img src="./assets/img/bowen-exam-web.png" alt="online-cbt-web-app">
+                            </div>
+                            <div 
+                                data-aos="fade-up" 
+                                data-aos-duration="500" 
+                                data-aos-delay="400" 
+                                data-aos-once="true"
+                                class="project-detail aos-init aos-animate"
+                            >
+                                <h2>02. Online Computer Based Test Web App</h2>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur 
+                                    adipisicing elit. Alias error eius corporis 
+                                    delectus voluptatum aliquam officia ea eligendi 
+                                    porro qui perspiciatis magni eveniet beatae impedit 
+                                    consectetur reiciendis, tempora quo ratione.
+                                </p>
+                                <p>Stack Used: Nextjs, Reactjs, Nodejs and MongoDb</p>
+                                <div style="display: flex;flex-direction: row;margin: 2rem 0;">
+                                    <a 
+                                        class="btn" 
+                                        href="#" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer">
+                                        <span id="icon" class="material-icons">
+                                            visibility
+                                        </span>
+                                        Preview
+                                    </a>
+                                    <a 
+                                        class="btn-outline" 
+                                        href="#" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer">
+                                        <i class="fa fa-github" style="font-size:20px;padding-right: 8px;"></i>
+                                        Github Repo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div 
+                                data-aos="fade-up" 
+                                data-aos-duration="500" 
+                                data-aos-delay="300" 
+                                data-aos-once="true"
+                                class="project-detail aos-init aos-animate"
+                            >
+                                <h2>03. Nigeria COVID 19 Tracker Dashboard</h2>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur 
+                                    adipisicing elit. Alias error eius corporis 
+                                    delectus voluptatum aliquam officia ea eligendi 
+                                    porro qui perspiciatis magni eveniet beatae impedit 
+                                    consectetur reiciendis, tempora quo ratione.
+                                </p>
+                                <p>Stack Used: Reactjs, React-Leaflet, Bootstrap</p>
+                                <div style="display: flex; flex-direction: row;margin: 2rem 0;">
+                                    <a 
+                                        class="btn" 
+                                        href="#" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer">
+                                        <span id="icon" class="material-icons">
+                                            visibility
+                                        </span>
+                                        Preview
+                                    </a>
+                                    <a 
+                                        class="btn-outline" 
+                                        href="#" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer">
+                                        <i class="fa fa-github" style="font-size:20px; padding-right: 8px;"></i>
+                                        Github Repo
+                                    </a>
+                                </div>
+                            </div>
+                            <div 
+                                data-aos="fade-left" 
+                                data-aos-duration="500" 
+                                data-aos-delay="400" 
+                                data-aos-once="true"
+                                class="project-img"
+                            >
+                                <img 
+                                    src="./assets/img/covid-dashboard.png" 
+                                    alt="my-image"
+                                />
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div 
+                                data-aos="fade-right" 
+                                data-aos-duration="500" 
+                                data-aos-delay="300" 
+                                data-aos-once="true"
+                                class="project-img"
+                            >
+                                <div class="project-screenshot">
+                                    <img src="./assets/img/mobile-screenshot.png" alt="hymnal-mobile-app-screenshot">
+                                </div>
+                            </div>
+                            <div 
+                                data-aos="fade-up" 
+                                data-aos-duration="500" 
+                                data-aos-delay="400" 
+                                data-aos-once="true"
+                                class="project-detail aos-init aos-animate"
+                            >
+                                <h2>04. Baptist Hymnal English & Yoruba Mobile App</h2>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur 
+                                    adipisicing elit. Alias error eius corporis 
+                                    delectus voluptatum aliquam officia ea eligendi 
+                                    porro qui perspiciatis magni eveniet beatae impedit 
+                                    consectetur reiciendis, tempora quo ratione.
+                                </p>
+                                <p>Stack Used: Reactjs, React Native CLI</p>
+                                <div style="display: flex; flex-direction: row;margin: 2rem 0;">
+                                    <a 
+                                        class="btn" 
+                                        href="#" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer">
+                                        <span id="icon" class="material-icons">
+                                            visibility
+                                        </span>
+                                        Preview
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div 
+                                data-aos="fade-up" 
+                                data-aos-duration="500" 
+                                data-aos-delay="300" 
+                                data-aos-once="true"
+                                class="project-detail"
+                            >
+                                <h2>05. My Portfolio Website Landing Page</h2>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur 
+                                    adipisicing elit. Alias error eius corporis 
+                                    delectus voluptatum aliquam officia ea eligendi 
+                                    porro qui perspiciatis magni eveniet beatae impedit 
+                                    consectetur reiciendis, tempora quo ratione.
+                                </p>
+                                <p>Stack Used: HTML, CSS, Jquery</p>
+                                <div style="display: flex; flex-direction: row;margin: 2rem 0;">
+                                    <a 
+                                        class="btn" 
+
+                                        href="#" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer">
+                                        <span id="icon" class="material-icons">
+                                            visibility
+                                        </span>
+                                        Preview
+                                    </a>
+                                    <a 
+                                        class="btn-outline" 
+
+                                        href="#" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer">
+                                        <i class="fa fa-github" style="font-size:20px; padding-right: 8px;"></i>
+                                        Github Repo
+                                    </a>
+                                </div>
+                            </div>
+                            <div 
+                                data-aos="fade-left" 
+                                data-aos-duration="500" 
+                                data-aos-delay="400" 
+                                data-aos-once="true"
+                                class="project-img"
+                            >
+                                <img src="./assets/img/portfolio.png" alt="Odunayo-portfolio-website">
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Portfolio Section -->
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="section-title">
+                        <span class="subtitle">CONNECT WITH ME</span>
+                        <h2 class="title">Let's Work Together</h2>
+                    </div>
+                    <div class="contact-container" style="padding: 3rem 0">
+                        <div class="contact-detail">
+                            <p style="text-align: left; line-height: 28px;">
+                                You can contact me through any of the links below, send a message or details of your 
+                                project you'd like me to be part of and I'll get back to you as soon as possible. 
+                            </p>
+                            <div style="margin-top: -10px;">
+                                <ul class="social-share liststyle">
+                                    <li class="facebook">
+                                        <a href="https://web.facebook.com/stixxdev/">
+                                            <svg aria-label="facebook" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="github">
+                                        <a href="https://www.github.com/ayodeji334">
+                                            <!-- <i class="fa fa-github" style="font-size:20px"></i> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="https://www.github.com/ayodeji334">
+                                            <!-- <i class="fa fa-github" style="font-size:20px"></i> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="https://www.linkedin.com/in/odunayo-ayodeji-fawumi-b2b47a209/"> 
+                                            <svg aria-label="linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                                <rect x="2" y="9" width="4" height="12"></rect>
+                                                <circle cx="4" cy="4" r="2"></circle>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="whatsapp">
+                                        <a href="#">
+                                            <svg aria-label="whatsapp" fill="#fff" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" svg-inline="" role="presentation" focusable="false" tabindex="-1">
+                                                <path d="M16.29 0C7.616 0 .582 6.978.582 15.589c0 2.945.823 5.698 2.253 8.049L0 32l8.699-2.762a15.743 15.743 0 007.592 1.94c8.676 0 15.709-6.982 15.709-15.59C32 6.979 24.967 0 16.29 0zm7.811 21.509c-.369.917-2.04 1.753-2.779 1.789-.738.04-.757.571-4.773-1.172-4.017-1.747-6.433-5.989-6.622-6.263-.19-.271-1.555-2.217-1.483-4.176.075-1.96 1.146-2.884 1.528-3.266.382-.385.82-.454 1.088-.457.316-.006.522-.01.754 0 .235.01.584-.049.888.76.304.81 1.032 2.796 1.123 3.002.092.202.15.437.007.698-.144.262-.219.425-.425.65-.209.226-.44.503-.627.676-.209.19-.427.399-.205.807.218.408.976 1.74 2.125 2.837 1.48 1.41 2.756 1.881 3.151 2.093.396.216.63.19.872-.065.242-.258 1.045-1.123 1.33-1.512.283-.388.548-.313.91-.166.363.147 2.296 1.182 2.69 1.397.396.212.657.323.752.493.095.16.065.957-.304 1.875z"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <h2 class="item-left">Send me a message</h2>
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <label for="fullname">FullName</label>
+                                    <input type="text" name="fullname" id="fullname" placeholder="What's your name?">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email (Company or Personal) </label>
+                                    <input required type="email" name="email" id="email" placeholder="Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <select name="subject" id="subject" required>
+                                        <option value="">Choose the right subject</option>
+                                        <option value="Develop a Responsive Website">Develop a Responsive Website</option>
+                                        <option value="Develop a mobile app">Develop a mobile application</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea
+                                        name="message"
+                                        id="message"
+                                        rows="6"
+                                        cols="9"
+                                        placeholder="Tell me more about the project, what you aim to acheive, links to any appropriate materials etc."
+                                    ></textarea>
+                                </div>
+                                <button type="submit" class="btn full-btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Of Contact Section -->
+        <!-- Footer section -->
+        <footer>
+            <div style="text-align: center;padding: .5rem 1rem;">
+                <p style="font-weight: 600;text-align: center;padding: 0 2rem;">
+                    Made with <span class="heart">&#10084;</span> by Odunayo Ayodeji Fawumi
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/formHandler.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/aos.js"></script>
+</body>
+</html>

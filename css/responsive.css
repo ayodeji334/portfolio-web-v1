@@ -1,0 +1,112 @@
+@media screen and (min-width: 768px){
+    body{
+        font-family: 'Poppins','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* overflow-x: hidden; */
+        scroll-behavior: smooth;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .description h2{
+        text-align: left;
+        font-size: 3.2rem;
+        width: 90%;
+    }
+    .intro{
+      padding-top: 0;  
+    }
+    .stacks-image-container{
+        display: block;
+    }
+    h2.section-title, .description p, h3.section-tag{
+        text-align: left;
+    }
+    span.title, h2.title, span.subtitle {
+        text-align: left;
+    }
+    .social-share {
+        justify-content: start;
+    }
+    .modal-body {
+        background-color: #ffffff;
+        margin: 60px auto;
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-detail,.role-container, .image-container{
+        width: 100%;
+        padding-top: 2rem;
+    }
+    .description p{
+        text-align: left;
+    }
+    .description{
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .container {
+        margin: 0 auto;
+        max-width: 1210px;
+        padding: 0 20px;
+        width: 100%;
+    }
+    .skills-img-container{
+        margin-top: -20px;
+    }
+    .banner-content{
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    .roles-content{
+        padding: 0 7rem;
+        flex-direction: row;
+    }
+    .tools-container{
+        padding-left: 70px;
+    }
+    .illustration-container {
+        height: 630px;
+        width: 100%;
+        margin-top: -20px;
+        padding-left: 3rem;
+    }
+    .illustration{
+        visibility: visible;
+        background-image: url("../assets/img/odunayo-ayodeji-fawumi.png");
+        background-position: center;
+        background-size: 106% 95%;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        max-width: 400px;
+        margin: 2.4rem;
+        border-radius: 9px;
+    }
+    .about-container,.project,.skill-container,.contact-container{
+        flex-direction: row;
+    }
+    .project-img, .project-detail{
+        width: 100%;
+    }
+    .nav-main{
+        display: block;
+    }
+    .menu-btn{
+        display: none;
+    }
+    .project-img{
+        padding: 1.36rem 6.5rem;
+        margin: 1.7rem 0;
+    }
+    .contact-form{
+        padding-top: 0;
+    }
+}
+
