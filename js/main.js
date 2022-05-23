@@ -1,4 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function(){    
+    setTimeout(function() {
+        $('.loader').hide();
+    }, 4000);
+
     let currentTheme = localStorage.getItem('current-theme');
 
     if(currentTheme === 'dark'){
