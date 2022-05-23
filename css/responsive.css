@@ -1,17 +1,33 @@
+/* :root {
+    --grey-1: #e2e2e2;
+    --grey-3: #ebebeb;
+    --dark-theme-bg-color: rgb(14, 14, 14);
+    --dark-theme-text-color: rgb(255, 255, 255);
+    --white: rgb(255, 255, 255);
+    --primary-1: #ff3333;
+    --transititon: 0.4s;
+    --color-body-1: #3c3e41;
+} */
+
 @media screen and (min-width: 768px){
     body{
-        font-family: 'Poppins','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        /* overflow-x: hidden; */
-        scroll-behavior: smooth;
         font-size: 16px;
         margin: 0;
         padding: 0;
-        width: 100%;
+        overflow: unset;
     }
-    .description h2{
-        text-align: left;
-        font-size: 3.2rem;
-        width: 90%;
+    .experience-tabs-headers{
+        padding: 0 3.6rem 0 0;
+        width: 20%;
+        scroll-behavior: smooth;
+        display: block;
+    }
+    .experience-list{
+        flex-direction: row;
+        padding: 4.7rem 0;
+    }
+    div.description h2{
+        font-size: 3rem;
     }
     .intro{
       padding-top: 0;  
@@ -39,7 +55,7 @@
         flex-direction: column;
         justify-content: center;
     }
-    .about-detail,.role-container, .image-container{
+    .about-detail, .image-container{
         width: 100%;
         padding-top: 2rem;
     }
@@ -64,32 +80,7 @@
         justify-content: left;
         align-items: center;
     }
-    .roles-content{
-        padding: 0 7rem;
-        flex-direction: row;
-    }
-    .tools-container{
-        padding-left: 70px;
-    }
-    .illustration-container {
-        height: 630px;
-        width: 100%;
-        margin-top: -20px;
-        padding-left: 3rem;
-    }
-    .illustration{
-        visibility: visible;
-        background-image: url("../assets/img/odunayo-ayodeji-fawumi.png");
-        background-position: center;
-        background-size: 106% 95%;
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
-        max-width: 400px;
-        margin: 2.4rem;
-        border-radius: 9px;
-    }
-    .about-container,.project,.skill-container,.contact-container{
+    .about-container,.project,.contact-container{
         flex-direction: row;
     }
     .project-img, .project-detail{
@@ -102,11 +93,36 @@
         display: none;
     }
     .project-img{
-        padding: 1.36rem 6.5rem;
-        margin: 1.7rem 0;
+        padding: 1.06rem 3.5rem;
     }
     .contact-form{
         padding-top: 0;
     }
+    .experience-detail .inner::after {
+        right: 102.6%;
+    }
+    .img-container{
+        width: 350px;
+        height: 350px;
+    }
 }
 
+@media screen  and (max-width: 570px) {
+    .experience-detail .inner::after {
+        right: 106%;
+    }
+}
+@media screen and (max-width: 414px){
+    .experience-detail .inner::after {
+        right: 108%;
+    }
+}
+
+@media screen and (min-width: 1390px) {
+    .stacks-image-container .inner {
+        height: 520px;
+        padding: 1rem 3rem;
+        position: relative;
+        margin-top: 3.7rem;
+    }
+}
