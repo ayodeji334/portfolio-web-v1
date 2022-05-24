@@ -1,12 +1,12 @@
 :root {
     --grey-1: #e2e2e2;
     --grey-3: #ebebeb;
-    --dark-theme-bg-color: rgb(14, 14, 14);
+    --dark-theme-bg-color: rgb(37, 37, 37);
     --dark-theme-text-color: rgb(255, 255, 255);
     --white: rgb(255, 255, 255);
-    --primary-1: #ff3333;
+    --primary-1: #fd4a4a;
     --transititon: 0.4s;
-    --color-body-1: #3c3e41;
+    --color-body-1: #1a1a1a;
 }
 
 html, body{
@@ -18,7 +18,6 @@ html, body{
     background-color: #ffffff;
     width: 100%;
     overflow-x: hidden;
-    font-size: 14px;
 }
 .dark-mode{
     background-color: var(--dark-theme-bg-color);
@@ -122,14 +121,6 @@ h1,h2,h3,h4,h5{
     background-color: rgb(7, 7, 7);
     color: #ffffff;
 }
-span.title {
-    font-size: 1rem;
-    letter-spacing: 3px;
-    font-weight: 500;
-    display: block;
-    margin-bottom: 20px;
-    text-align: center;
-}
 .social-share {
     display: flex;
     margin: -10px -12px;
@@ -180,7 +171,7 @@ span.title {
 .dark-mode li.tab-header.active, li.tab-header {
     color: white;
 }
-.dark-mode .experience-detail h4 {
+.dark-mode .experience-detail h3 {
     color: black;
 }
 .experience-tabs-content{
@@ -260,13 +251,16 @@ ul.tabs-headers-list{
 }
 li.tab-header{
     font-weight: 600;
-    color: #7c838e;
+    color: #b0b1b3;
     margin-bottom: .9rem;
     cursor: pointer;
 }
 li.tab-header.active{
     color: black;
     font-weight: 800;
+}
+img{
+    display: block;
 }
 .stacks-image-container .inner img {
     width: 100%;
@@ -284,14 +278,20 @@ li.tab-header.active{
     width: 100%;
     height: 30rem;
 }
-div.description h2{
-    font-weight: 600;
-    font-size: 2.43rem;
-    margin-bottom: 1rem;
-    width: 100%;
+.dark-mode div.description p.title{
+    color: white;
 }
-div.description h2 span.outline{
+div.description p.title, div.description span.title-outline{
+    font-weight: 600;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    color: black;
+    width: 100%;
+    margin: 0.7rem 0;
+}
+div.description span.title-outline{
     color: var(--primary-1);
+    font-size: 2.13rem;
     font-weight: 700;
 }
 .m-0{
@@ -303,8 +303,6 @@ div.description{
     padding: 1.4rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: .7rem 0;
 }
 .banner-content{
@@ -404,7 +402,7 @@ ul li{
     padding: .56rem 2.94rem;
     margin: .5rem 0;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     border-radius: 30px;
 }
 .dark-mode .sidenav a{
@@ -437,7 +435,7 @@ button:focus{
     outline: none;
 }
 .darkBg{
-    background-color: #000000;
+    background-color: var(--color-body-1);
     border-bottom: 1px solid #5e5e5e;
 }
 .lightBg{
@@ -513,27 +511,30 @@ section:not(:first-child){
 .full-btn{
     width: 100%;
 }
-.btn, .btn-outline{
-    background-color: black;
-    font-weight: 600;
-    padding: 1rem 1.3rem;
-    font-size: .87rem;
+.dark-mode .btn, .dark-mode .btn:hover, .dark-mode .btn-outline:hover {
+    background-color: white;
+    color: black;
+}
+.dark-mode .btn-outline {
+    background-color: inherit;
+    border: 2px solid white;
     color: white;
+}
+.btn, .btn-outline:hover{
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+.btn, .btn-outline {
+    font-weight: 600;
+    padding: .8rem 1.3rem;
+    font-size: .87rem;
     text-align: center;
     cursor: pointer;
-    font-family: "Poppins", sans-serif;
     text-decoration: none;
-    border-radius: 9px;
-    border: none;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 7px;
 }
-span.material-icons{
-    margin-right: 10px;
-}
-.btn-outline{
+.btn-outline {
     background-color: white;
     border: 2px solid black;
     color: #000;
@@ -595,17 +596,18 @@ form .error {
 }
 .project-img{
     padding: .83rem .51rem;
+    max-height: 400px;
     /* margin: 1.4rem 0; */
 }
-.dark-mode a.nav-link:hover {
-    background-color: white;
-    color: rgb(0, 0, 0) !important;
+.dark-mode .sidenav{
+    background-color: var(--color-body-1);
+    border-top: 1px solid #e2e2e2;
 }
 a.nav-link.active{
     background-color: black;
     color: #ffffff;
 }
-.dark-mode a.nav-link.active{
+.dark-mode a.nav-link.active, .dark-mode a.nav-link:hover{
     background-color: #ffffff;
     color: black !important;
 }
@@ -670,8 +672,10 @@ button, button:focus{
 }
 .project-img img{
     width: 100%;
+    height: 100%;
     max-height: 400px;
     object-fit: contain;
+    object-position: center;
 }
 .form-group{
     display: flex;
