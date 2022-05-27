@@ -1,7 +1,7 @@
 $(document).ready(function(){    
-    setTimeout(function() {
-        $('.loader').hide();
-    }, 4000);
+    // setTimeout(function() {
+    //     $('.loader').hide();
+    // }, 4000);
 
     let currentTheme = localStorage.getItem('current-theme');
 
@@ -19,7 +19,6 @@ $(document).ready(function(){
             localStorage.setItem('current-theme', 'dark');
 
             $('body').addClass("dark-mode");
-            $(".navbar-container span.material-icons").html("&#xe518;").css({ "color": "#ffffff"});
              
             if(Math.floor($(window).scrollTop()) > 60){
                 $('.navbar-container').removeClass("lightBg").addClass("darkBg");
@@ -28,7 +27,6 @@ $(document).ready(function(){
             localStorage.setItem('current-theme', 'light');
             
             $('body').removeClass("dark-mode");
-            $(".navbar-container span.material-icons").html(`&#xe51c;`).css({ "color": "rgb(0, 0, 0)"});
 
             if(Math.floor($(window).scrollTop()) > 60){
                 $('.navbar-container').removeClass("darkBg").addClass("lightBg");    
