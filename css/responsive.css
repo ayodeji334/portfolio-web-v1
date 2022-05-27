@@ -108,6 +108,12 @@
     div.intro {
         padding-top: 20px;
     }
+    div.description p.title, div.description span.title-outline{
+        font-size: 2rem;
+    }
+    div.description span.title-outline{
+        font-size: 2.33rem;
+    }
 }
 
 @media screen and (min-width: 1390px) {
