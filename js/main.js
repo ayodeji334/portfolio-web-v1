@@ -17,7 +17,6 @@ $(document).ready(function(){
            
         if(currentTheme === 'light'){
             localStorage.setItem('current-theme', 'dark');
-
             $('body').addClass("dark-mode");
              
             if(Math.floor($(window).scrollTop()) > 60){
@@ -25,7 +24,6 @@ $(document).ready(function(){
             }; 
         }else{
             localStorage.setItem('current-theme', 'light');
-            
             $('body').removeClass("dark-mode");
 
             if(Math.floor($(window).scrollTop()) > 60){
@@ -44,7 +42,7 @@ $(document).ready(function(){
 
     //Scroll Effect
     function toggleNavbarClassOnScroll(){
-        bgColor = window.getComputedStyle(document.body, null).getPropertyValue('background-color');
+        let bgColor = window.getComputedStyle(document.body, null).getPropertyValue('background-color');
         let scrollHeight = Math.floor($(window).scrollTop());
 
         if(scrollHeight === 0 || scrollHeight < 60){
